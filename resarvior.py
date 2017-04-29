@@ -8,8 +8,6 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('reservoir.csv',sep=',')
 print(df[df['id']=='ANT'])
 
+
 exit()
-filename= "reservoir.json"
-with open(filename, 'r') as infile: 
-	data  = json.load(infile)
-print(data)
+
