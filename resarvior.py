@@ -27,7 +27,7 @@ def filter_data(df,N):
 	temp1=[]
 	filtered_df=df
 	for Rid in id_list:
-		if df[df['id']==Rid].shape[0]<N:
+		if df[df['id']==Rid].shape[0]>N:
 			print(df[df['id']==Rid].shape[0])
 			temp.append(df[df['id']==Rid].shape[0])
 			temp1.append(Rid)
